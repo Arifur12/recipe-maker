@@ -1,4 +1,3 @@
-//
 import { useEffect, useState } from "react";
 
 export const useFetch = (url, method = "GET") => {

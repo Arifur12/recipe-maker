@@ -2,6 +2,11 @@ import { Link } from "react-router-dom";
 import "./RecipeList.css";
 
 export default function RecipeList({ recipes }) {
+  // in case of empty search ... also multiple return condition
+
+  // if (recipes.length === 0) {
+  //   return <div className="error">No recipes to load...</div>;
+  // }
   return (
     <div className="recipe-list">
       {recipes.map((recipe) => (
